@@ -1,0 +1,30 @@
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTXJwb29sIiwiaWF0IjoxNzE1MDAyMDE2fQ.kuAsp7ExorCMfAkhS3_gCj-swlcsVZVKT4R3qTO1pw4
+
+
+###
+
+POST http://localhost:4000/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTXJwb29sIiwiaWF0IjoxNzE1MDAyMTg4fQ.-552b2T6AhXU5nXJcFDJiAR4nLtSENW1Ac6DM_uxY8Y"
+}
+
+###
+
+DELETE http://localhost:3000/logout
+Content-Type: application/json
+
+{
+    "token": ""
+}
+
+###
+
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+    "username": "Mrpool"
+}
